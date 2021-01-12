@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[34,)"
+issueTrackerURL="https://github.com/LCLPYT/LCLPUpdateChecker/issues"
+displayURL="https://github.com/LCLPYT/LCLPUpdateChecker"
+authors="LCLP"
+license="MIT"
+
+[[mods]]
+    modId="lmodelloader"
+    version="${version}"
+    displayName="LModelLoader"
+    updateJSONURL="https://raw.githubusercontent.com/LCLPYT/LCLPUpdateChecker/master/LCLPUpdateChecker/update.json"
+    logoFile="logo.png"
+    credits="LCLPNetwork!"
+    description='''
+    An implementation and loader for .lmf model files by LCLP.
+    '''
+    
+    [[dependencies.lmodelloader]]
+        modId="forge"
+        mandatory=true
+        versionRange="[34,)"
+        ordering="NONE"
+        side="BOTH"
+    [[dependencies.lmodelloader]]
+        modId="minecraft"
+        mandatory=true
+        versionRange="[1.16.3]"
+        ordering="NONE"
+        side="BOTH"
+
