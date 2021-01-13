@@ -1,0 +1,18 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "compatibilityLevel": "JAVA_8",
+    "mixinPriority": 1,
+    "package": "work.lclpnet.lmodelloader.asm.mixin",
+    "refmap": "lmodelloader.refmap.json",
+    "mixins": [
+    ],
+    "client": [
+        "MixinModelRendererModelBox"
+    ],
+    "server": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+  }
