@@ -2,18 +2,18 @@ package work.lclpnet.lmodelloader.data;
 
 public class CubeTexture {
 
-	protected int offetX, offsetY;
+	protected int offsetX, offsetY;
 	protected float width, height;
 	
 	public CubeTexture(int offsetX, int offsetY, float width, float height) {
-		this.offetX = offsetX;
+		this.offsetX = offsetX;
 		this.offsetY = offsetY;
 		this.width = width;
 		this.height = height;
 	}
 	
 	public int getOffetX() {
-		return offetX;
+		return offsetX;
 	}
 	
 	public int getOffsetY() {
@@ -29,7 +29,7 @@ public class CubeTexture {
 	}
 
 	public CubeTexture copy() {
-		return new CubeTexture(this.offetX, this.offsetY, this.width, this.height);
+		return new CubeTexture(this.offsetX, this.offsetY, this.width, this.height);
 	}
 	
 }

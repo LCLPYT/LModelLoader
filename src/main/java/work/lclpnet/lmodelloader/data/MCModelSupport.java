@@ -11,12 +11,12 @@ import work.lclpnet.lmodelloader.asm.type.IConstructData;
 
 public class MCModelSupport {
 
-	public static <E extends Entity> LModel convertMCModelToLMF(SegmentedModel<E> model, String modelName) {
+	public static <E extends Entity> LModel convertMCModelToLMF(SegmentedModel<E> model, String modelName, Vector3f initialTranslation) {
 		List<LModelRenderer> renderers = new ArrayList<>();
 
 		model.getParts().forEach(mr -> renderers.add(convertModelRenderer(mr)));
 
-		LModel lmf = new LModel(modelName, renderers);
+		LModel lmf = new LModel(modelName, renderers, initialTranslation);
 		return lmf;
 	}
 
