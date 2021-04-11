@@ -21,6 +21,7 @@ public class LModelEntities {
 	private static final List<EntityType<?>> ENTITY_TYPES = new ArrayList<>();
 
 	public static final EntityType<DummyEntity> DUMMY = register("lmodelloader:dummy", DummyEntity::new, 1F, 1F);
+	public static final EntityType<VampireEntity> VAMPIRE = register("lmodelloader:vampire", VampireEntity::new, 1F, 2F);
 	
 	private static <T extends Entity> EntityType<T> register(String name, Function<World, T> function, float width, float height) {
 		EntityType<T> type = EntityType.Builder.<T>create((entityType, world) -> function.apply(world), EntityClassification.CREATURE).size(width, height).setCustomClientFactory((spawnEntity, world) -> function.apply(world)).build(name);
@@ -37,6 +38,7 @@ public class LModelEntities {
 	
     public static void registerEntityTypeAttributes() {
         GlobalEntityTypeAttributes.put(DUMMY, DummyEntity.prepareAttributes().create());
+        GlobalEntityTypeAttributes.put(VAMPIRE, VampireEntity.prepareAttributes().create());
     }
 	
 }

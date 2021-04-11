@@ -31,9 +31,9 @@ public class DummyModel extends SegmentedModel<DummyEntity> {
 		textureWidth = 64;
 		
 		main = new ModelRenderer(this, 0, 0);
-		main.addBox(-14.0F, -9.0F, -3.0F, 28.0F, 16.0F, 3.0F, 0.0F);
-		main.setRotationPoint(8F, 24F, 0F);
-		main.rotateAngleY = ((float)Math.PI / 4F);
+		main.addBox(0F, -1F, 0F, 1.0F, 1.0F, 0.5F, 0.0F);
+		main.setRotationPoint(0F, 24F, 0F);
+//		main.rotateAngleY = ((float)Math.PI / 4F);
 	}
 	
 }

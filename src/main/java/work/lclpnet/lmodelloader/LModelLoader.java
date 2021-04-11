@@ -21,6 +21,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib3.GeckoLib;
 import work.lclpnet.lmodelloader.data.DefaultTranslations;
 import work.lclpnet.lmodelloader.data.LModel;
 import work.lclpnet.lmodelloader.data.LModelSerializer;
@@ -41,6 +42,8 @@ public class LModelLoader {
 		
 		IEventBus bus = MinecraftForge.EVENT_BUS;
 		bus.register(this);
+		
+		GeckoLib.initialize();
 	}
 	
 	private void setup(final FMLCommonSetupEvent event) { //preinit
